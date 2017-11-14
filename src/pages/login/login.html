@@ -1,0 +1,33 @@
+<ion-content padding>
+    <div style="text-align:center">
+        <img src="assets/imgs/logo.png" width="220px" height="200px">
+    </div>
+
+
+    <form style="padding-top:50px;">
+        <ion-item>
+            <ion-input type="text" name="email" placeholder="Email Address" [(ngModel)]="email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-input type="password" name="pwd" placeholder="Password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+
+    </form>
+
+    <div text-center style="padding-top:30px;">
+        <button ion-button round large type="submit" style="color: rgb(30, 190, 124); width:300px; background-color:white" (click)="Login()">Login</button>
+    </div>
+
+    <div text-center style="padding-top:30px;">
+        <a href="#" style="color: #045021; font-size:22px;" (click)="forgotPassword()">Forgot Password ?</a>
+    </div>
+
+</ion-content>
+
+<style>
+    ion-content {
+        background: url(assets/imgs/background.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+</style>
